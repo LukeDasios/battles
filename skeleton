@@ -1,9 +1,0 @@
-import { Monster } from './monster'
-
-class Skeleton extends Monster {
-  constructor(name: string, damage: number, health: number) {
-    super(name, damage, health)
-  }
-}
-
-export { Skeleton }

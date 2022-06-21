@@ -1,42 +1,13 @@
 class Monster {
-  name: string
-  damage: number
-  health: number
+  name: string = ""
+  damage: number = 0
+  health: number = 0
+  level: number
 
-  constructor(name: string, damage: number, health: number) {
-    this.name = name
-    this.damage = damage
-    this.health = health
+  constructor (level: number) {
+    this.level = level
   }
 }
 
 
 export { Monster }
-
-
-
-
-
-class Person {
-  name: string;
-
-  constructor(name: string) {
-      this.name = name;
-  }
-}
-
-class Employee extends Person {
-  empCode: number;
-
-  constructor(empcode: number, name:string) {
-      super(name);
-      this.empCode = empcode;
-  }
-
-  displayName():void {
-      console.log("Name = " + this.name +  ", Employee Code = " + this.empCode);
-  }
-}
-
-let emp = new Employee(100, "Bill");
-emp.displayName(); // Name = Bill, Employee Code = 100

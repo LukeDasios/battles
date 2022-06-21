@@ -1,8 +1,14 @@
 import { Monster } from "./monster"
 
 class Zombie extends Monster {
-  constructor(name: string, damage: number, health: number) {
-    super(name, damage, health)
+  name: string = "Zombie"
+  damage: number = 10
+  health: number = 100
+
+  constructor(level: number) {
+    super(level)
+    this.damage *= level
+    this.health *= level
   }
 }
 
